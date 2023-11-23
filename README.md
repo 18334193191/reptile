@@ -27,10 +27,11 @@
 
 
 #### 使用说明
+https://www.dxsbb.com/news/1643.html这个地址换成要爬取数据的地址，div.tablebox这个是要获取自己需要数据的那个标签的class，这个是数据在那个标签上td
+           Document document = Jsoup.connect("https://www.dxsbb.com/news/1643.html").get();
+            Elements elements = document.select("div.tablebox");
+            Elements tbody = elements.select("td");
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 参与贡献
 
